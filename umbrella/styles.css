@@ -23,11 +23,16 @@ h1 {
   font-size: 2.5rem;
 }
 
-.umbrella-container {
-  position: relative;
+.umbrella {
+  /* position: relative; */
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
   width: 100%;
   max-width: 400px;
   margin-bottom: 20px;
+  height: 400px;
 }
 
 .upload-title { 
@@ -36,7 +41,6 @@ h1 {
 }
 
 .umbrella {
-  position: relative;
   width: 100%;
 }
 
@@ -51,11 +55,7 @@ h1 {
 }
 
 #loaderIcon {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
+
   max-width: 100px;
   height: auto;
 }
@@ -161,13 +161,13 @@ h1 {
   100% { transform: rotate(360deg); }
 }
 
-@media (min-width: 600px) {
+@media (min-width: 1600px) {
   .container {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
     padding: 20px;
-    width: 40%;
+    width: 45%;
   }
 
   .controls {
